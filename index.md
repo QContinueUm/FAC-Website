@@ -9,7 +9,7 @@
 <h3><i>And how it's going</i></h3>
 
 Tracking my progress <a href="https://github.com/QContinueUm/QContinueUm.github.io/projects/1">here</a>.
-<p>
+<p></p>
 <b>CS50x Intro to Computer Science</b>
 <ul>
   <li>Problem Set 0</li>
