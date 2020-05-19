@@ -24,7 +24,7 @@
 
 <b>JavaScript Algorithms and Data Structures Certification</b>
 <ul>
-  <li>Basic JavaScrip</li>
+  <li>Basic JavaScript</li>
   <li>ES6</li>
   <li>Basic Data Structures</li>
   <li>Basic Algorithm Scripting</li>
