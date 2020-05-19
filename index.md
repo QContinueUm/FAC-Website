@@ -9,7 +9,7 @@
 <h1>What I'm Learning</h1>
 <h3><i>And how it's going</i></h3>
 
-<b>CS50x Intro to Computer Programming</b>
+<b>CS50x Intro to Computer Science</b>
 <ul>
   <li>Problem Set 0</li>
 </ul>
