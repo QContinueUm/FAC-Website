@@ -3,12 +3,12 @@
 
 <b>CS50x Intro to Computer Programming</b>
 <ul>
-  <li>Problemset 0</li>
+  <li>Problem Set 0</li>
 </ul>
 
 <b>Responsive Web Design Certification</b>
 <ul>
-  <li>Basic HTML and HTML5</li>
+  <li>Basic HTML and HTML5 &#9745;</li> 
   <li>Basic CSS</li>
   <li>Responsive Web Design Principles</li>
   <li>CSS Flexbox</li>
