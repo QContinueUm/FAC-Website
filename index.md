@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <!--
+<p>Notes: 1) I learned everything covered in freecodecamp's basic HTML from having a Livejournal, which was like Facebook for people with attention spans and an even higher flair for drama. 2) I prefer using the h3 tag for my subtitles because the h2 default font/style is too overbearing for my tastes.</p>
+-->
+  <head>
+  </head>
+  <body>
 <h1>What I'm Learning</h1>
 <h3><i>And how it's going</i></h3>
 
@@ -24,3 +32,5 @@
 
 <h1>Why I'm Doing This</h1>
 I've been putting off learning these skills since 2004. 
+</body>
+</html>
