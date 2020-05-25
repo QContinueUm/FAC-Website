@@ -1,3 +1,5 @@
-# QContinueUm.github.io
-I'm planning to apply to Founders & Coders, but first, I have to learn a ton of foundational information.
-Check out the Projects tab to see my progress through the prerequisites and the Wiki tab for a kind of personal progress diary.
+# Founders & Coders Application
+I'm planning to apply to F&C, but first, I have to learn a ton of foundational information.
+
+I'm tracking my progress through the prerequisite material and other relevant self-assigned material <a href="https://github.com/QContinueUm/QContinueUm.github.io/projects">in the Projects tab</a>.
+
