@@ -1,13 +1,16 @@
+/* Page body - for background design/pattern */
 body {
     background-image: radial-gradient(circle at center center, #000000 30%, #ffffff 30%); 
     background-size: 5px 5px;
 }
 
+/* Put this here early on, not sure I will end up using it */
 h1 {
     color: navy;
     margin-left: 30px;
 }
 
+/* Main content box containing the grid layout */
 .grid-container {
     display: grid;
     background-color: #fff;
@@ -19,6 +22,7 @@ h1 {
     box-shadow: 30px 30px #0db1f0, 35px 35px #000;
 }
 
+/* Each cell within the grid */
 .grid-cell {
     padding: 4rem;
     border-style: solid;
@@ -26,6 +30,7 @@ h1 {
 
 }
 
+/* Each cell within the grid has its own background color */
 .cell-1 {
     background-color: #fff;
 }
@@ -50,6 +55,7 @@ h1 {
     background-color: #f725a0;
 }
 
+/* Each cell has a container inside, flexbox - I'm experimenting with this */
 .container {
     display: flex;
     flex-wrap: wrap;
