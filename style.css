@@ -1,5 +1,6 @@
 body {
-    background-color: lightblue;
+    background-image: radial-gradient(circle at center center, #000000 30%, #ffffff 30%); 
+    background-size: 5px 5px;
 }
 
 h1 {
