@@ -12,11 +12,11 @@ h1 {
     display: grid;
     background-color: #fff;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr;
-    gap: 5px;
-    padding: 5px;
-    width: 100vw;
-    height: 100vh;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    /* gap: 5px; */
+    /* padding: 5px; */
+    /* width: 100vw;
+    height: 100vh; */
     border-style: solid;
     border-color: #000;
     margin: 50px;
@@ -26,7 +26,9 @@ h1 {
     color: #fff;
     font-size: 4rem;
     text-align: center;
-    padding: 4rem;
+    padding: 2rem;
+    border-style: solid;
+    border-color: #000;
 }
 
 .cell-1 {
