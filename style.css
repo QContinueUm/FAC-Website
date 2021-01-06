@@ -13,23 +13,17 @@ h1 {
     background-color: #fff;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.25fr 1fr 1fr;
-    /* gap: 5px; */
-    /* padding: 5px; */
-    /* width: 100vw;
-    height: 100vh; */
     border-style: solid;
     border-color: #000;
     margin: 50px;
+    box-shadow: 30px 30px #0db1f0, 35px 35px #000;
 }
 
 .grid-cell {
-    color: #000;
-    font-size: 3rem;
-    text-align: center;
     padding: 4rem;
     border-style: solid;
     border-color: #000;
-    font-family: 'Titan One', cursive;
+
 }
 
 .cell-1 {
@@ -41,7 +35,7 @@ h1 {
 }
 
 .cell-3 {
-    background-color: #672394;
+    background-color: #0cb2c0;  
 }
 
 .cell-4 {
@@ -49,9 +43,19 @@ h1 {
 }
 
 .cell-5 {
-    background-color: #0cb2c0;
+    background-color: #5e72d4;
 }
 
 .cell-6 {
     background-color: #f725a0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem; 
+    text-align: center;
+    font-family: 'Titan One', cursive; 
+    height: 100%;
+    width: 100%;
 }
