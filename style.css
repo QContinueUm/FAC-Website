@@ -17,9 +17,20 @@ body {
     box-shadow: 30px 30px #0db1f0, 35px 35px #000;
 }
 
+html {
+    font-size: 2vw; 
+}
+
+h1 {
+    font-size: 2em; 
+    font-family: 'Titan One', cursive; 
+
+}
+
+
 header {
     display: flex;
-    grid-column: 1 / span 4;
+    grid-column: 1 / 4;
     background-color: #fff;
     height: 10vw;
     border-style: solid;
@@ -30,24 +41,24 @@ header {
 
 section {
     display: flex;
-    grid-column: 1 / span 2;
+    grid-column: 1 / 2;
     border-style: solid;
     border-color: #000;
 }
 
 aside {
     display: flex;
-    grid-column: span 2;
+    grid-column: 2 / 4;
     border-style: solid;
     border-color: #000;
 }
 
 /* For smaller devices, layout should collapse into 1 column grid/list */
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     header,
     section,
     aside {
-        grid-column: 1 / span 4;
+        grid-column: 1 / 4;
     }
 }
 
@@ -56,12 +67,10 @@ aside {
 /* Each cell within the grid */
 .grid-cell {
     display: flex;
-    padding: 4rem;
-    font-size: 3rem; 
-    text-align: center;
-    font-family: 'Titan One', cursive; 
-    
-
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;    
+    justify-items: center;
 
 } 
 
@@ -71,22 +80,22 @@ aside {
     background-color: #fff;
 }
 
-.cell-3 {
+.cell-2 {
 
     background-color: #0cb2c0;  
 }
 
-.cell-4 {
+.cell-3 {
 
     background-color: #fad141;
 }
 
-.cell-5 {
+.cell-4 {
 
     background-color: #5e72d4;
 }
 
-.cell-6 {
+.cell-5 {
 
     background-color: #f725a0;
 }
