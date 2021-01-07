@@ -9,7 +9,7 @@ body {
     background-image: radial-gradient(circle at center center, #000000 30%, #ffffff 30%); 
     background-size: 5px 5px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr), minmax(1fr);
     grid-template-rows: 10vw 20vw 20vw;
     border-style: solid;
     border-color: #000;
@@ -21,6 +21,7 @@ header {
     display: flex;
     grid-column: 1 / span 4;
     background-color: #fff;
+    height: 10vw;
     border-style: solid;
     border-color: #000;
 }
@@ -41,6 +42,7 @@ aside {
     border-color: #000;
 }
 
+/* For smaller devices, layout should collapse into 1 column grid/list */
 @media (max-width: 700px) {
     header,
     section,
@@ -58,6 +60,7 @@ aside {
     font-size: 3rem; 
     text-align: center;
     font-family: 'Titan One', cursive; 
+    
 
 
 } 
