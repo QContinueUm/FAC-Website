@@ -29,7 +29,7 @@ h1 {
 
 
 header {
-    display: flex;
+    display: block;
     grid-column: 1 / 4;
     background-color: #fff;
     height: 10vw;
@@ -40,14 +40,14 @@ header {
 
 
 section {
-    display: flex;
+    display: block;
     grid-column: 1 / 2;
     border-style: solid;
     border-color: #000;
 }
 
 aside {
-    display: flex;
+    display: block;
     grid-column: 2 / 4;
     border-style: solid;
     border-color: #000;
