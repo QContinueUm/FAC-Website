@@ -1,3 +1,6 @@
+/* Importing typography from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titan+One&display=swap');
+
 /* Page body - for background design/pattern */
 body {
     background-image: radial-gradient(circle at center center, #000000 30%, #ffffff 30%); 
