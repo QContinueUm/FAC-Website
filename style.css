@@ -4,70 +4,95 @@
 /* To be used for body text */
 /* font-family: 'Open Sans', sans-serif; */
 
-/* Page body - for background design/pattern */
+/* Page body - for background design/pattern and main content box */
 body {
     background-image: radial-gradient(circle at center center, #000000 30%, #ffffff 30%); 
     background-size: 5px 5px;
-}
-
-/* Put this here early on, not sure I will end up using it */
-h1 {
-    color: navy;
-    margin-left: 30px;
-}
-
-/* Main content box containing the grid layout */
-.grid-container {
     display: grid;
-    background-color: #fff;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vw 20vw 20vw;
     border-style: solid;
     border-color: #000;
     margin: 50px 85px 50px 50px;
     box-shadow: 30px 30px #0db1f0, 35px 35px #000;
 }
 
-/* Each cell within the grid */
-.grid-cell {
-    padding: 4rem;
+header {
+    display: flex;
+    grid-column: 1 / span 4;
+    background-color: #fff;
     border-style: solid;
     border-color: #000;
-
 }
+
+
+
+section {
+    display: flex;
+    grid-column: 1 / span 2;
+    border-style: solid;
+    border-color: #000;
+}
+
+aside {
+    display: flex;
+    grid-column: span 2;
+    border-style: solid;
+    border-color: #000;
+}
+
+@media (max-width: 700px) {
+    header,
+    section,
+    aside {
+        grid-column: 1 / span 4;
+    }
+}
+
+   
+
+/* Each cell within the grid */
+.grid-cell {
+    display: flex;
+    padding: 4rem;
+    font-size: 3rem; 
+    text-align: center;
+    font-family: 'Titan One', cursive; 
+
+
+} 
 
 /* Each cell within the grid has its own background color */
 .cell-1 {
-    background-color: #fff;
-}
 
-.cell-2 {
     background-color: #fff;
 }
 
 .cell-3 {
+
     background-color: #0cb2c0;  
 }
 
 .cell-4 {
+
     background-color: #fad141;
 }
 
 .cell-5 {
+
     background-color: #5e72d4;
 }
 
 .cell-6 {
+
     background-color: #f725a0;
 }
 
 /* Each cell has a container inside, flexbox - I'm experimenting with this */
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
-    font-size: 3rem; 
-    text-align: center;
-    font-family: 'Titan One', cursive; 
+
     height: 100%;
     width: 100%;
-}
+} */
