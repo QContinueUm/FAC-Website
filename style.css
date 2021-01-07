@@ -70,7 +70,7 @@ aside {
     flex-wrap: wrap;
     align-items: center;
     padding: 2em;    
-    justify-items: center;
+    /* justify-items: center; */
 
 } 
 
