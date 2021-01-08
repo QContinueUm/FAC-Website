@@ -92,7 +92,7 @@ footer {
     background-color: #fff;
     border-style: solid;
     border-color: #000;
-    text-align: left;
+    text-align: right;
 }
 
 /* For screens <1000px, layout collapses into 1 column grid/list with footer at bottom */
