@@ -11,8 +11,13 @@ body {
     background-image: radial-gradient(circle at center center, #000000 30%, #ffffff 30%); 
     background-size: 5px 5px;
     display: grid;
+    grid-template-areas: 
+    'header footer'
+    'section section'
+    'section section'
     grid-template-columns: 50% 50%;
     grid-template-rows: 10vw;
+
     border-style: solid;
     border-color: #000;
     margin: 50px 85px 50px 50px;
@@ -32,7 +37,7 @@ h1 {
 
 header {
     display: block;
-    grid-column: 1 / 4;
+    grid-column: 1 / 2;
     background-color: #fff;
     border-style: solid;
     border-color: #000;
@@ -54,12 +59,28 @@ aside {
     border-color: #000;
 }
 
+footer {
+    display: block;
+    grid-column: 2 / 4;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #000;
+}
+
 /* For smaller devices, layout should collapse into 1 column grid/list */
 @media (max-width: 1000px) {
     header,
     section,
-    aside {
+    aside,
+    footer {
         grid-column: 1 / 4;
+        grid-template-areas: 
+        'header'
+        'section'
+        'section'
+        'section'
+        'section'
+        'footer'
     }
 }
 
@@ -99,6 +120,11 @@ aside {
 .cell-5 {
 
     background-color: #f725a0;
+}
+
+.cell-6 {
+
+    background-color: #fff;
 }
 
 /* Each cell has a container inside, flexbox - I'm experimenting with this */
