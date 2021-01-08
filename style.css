@@ -15,6 +15,12 @@ body {
     font-size: 1em;
 }
 
+h1 {
+    font-size: 1.5em; 
+    font-family: 'Titan One', cursive; 
+}
+
+/* Main container - holds the whole grid */
 .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -24,14 +30,15 @@ body {
     box-shadow: 30px 30px #0db1f0, 35px 35px #000;
 }
 
+/* Applies to overall styling of all cells in the grid */
+.grid-cell {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;    
+} 
 
-h1 {
-    font-size: 1.5em; 
-    font-family: 'Titan One', cursive; 
-
-}
-
-
+/* Header - top left white cell */
 header {
     display: block;
     grid-column: 1 / 2;
@@ -40,8 +47,7 @@ header {
     border-color: #000;
 }
 
-
-
+/* Teal and purple cells*/
 section {
     display: block;
     grid-column: 1 / 2;
@@ -49,6 +55,15 @@ section {
     border-color: #000;
 }
 
+.cell-2 {
+    background-color: #0cb2c0;  
+}
+
+.cell-4 {
+    background-color: #5e72d4;
+}
+
+/* Yellow and pink cells */
 aside {
     display: block;
     grid-column: 2 / 4;
@@ -56,6 +71,16 @@ aside {
     border-color: #000;
 }
 
+.cell-3 {
+    background-color: #fad141;
+}
+
+
+.cell-5 {
+    background-color: #f725a0;
+}
+
+/* Footer - top right white cell on screens > 1000px */
 footer {
     display: block;
     grid-column: 2 / 4;
@@ -64,65 +89,12 @@ footer {
     border-color: #000;
 }
 
-/* For smaller devices, layout should collapse into 1 column grid/list */
+/* For screens <1000px, layout collapses into 1 column grid/list with footer at bottom */
 @media (max-width: 1000px) {
     header,
     section,
     aside,
     footer {
-        grid-column: 1 / 4;
-
+    grid-column: 1 / 4;
     }
 }
-
-   
-
-/* Each cell within the grid */
-.grid-cell {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 2em;    
-    /* justify-items: center; */
-
-} 
-
-/* Each cell within the grid has its own background color */
-.cell-1 {
-
-    background-color: #fff;
-}
-
-.cell-2 {
-
-    background-color: #0cb2c0;  
-}
-
-.cell-3 {
-
-    background-color: #fad141;
-}
-
-.cell-4 {
-
-    background-color: #5e72d4;
-}
-
-.cell-5 {
-
-    background-color: #f725a0;
-}
-
-.cell-6 {
-
-    background-color: #fff;
-}
-
-/* Each cell has a container inside, flexbox - I'm experimenting with this */
-/* .container {
-    display: flex;
-    flex-wrap: wrap;
-
-    height: 100%;
-    width: 100%;
-} */
