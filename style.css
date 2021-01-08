@@ -32,19 +32,19 @@ h1 {
 
 /* Applies to overall styling of all cells in the grid */
 .grid-cell {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     padding: 2em;    
+
 } 
 
 /* Header - top left white cell */
 header {
     display: block;
     grid-column: 1 / 2;
+    grid-row: 1 / 1;
     background-color: #fff;
     border-style: solid;
     border-color: #000;
+    text-align: left;
 }
 
 /* Teal and purple cells*/
@@ -53,6 +53,7 @@ section {
     grid-column: 1 / 2;
     border-style: solid;
     border-color: #000;
+    text-align: center;
 }
 
 .cell-2 {
@@ -69,6 +70,7 @@ aside {
     grid-column: 2 / 4;
     border-style: solid;
     border-color: #000;
+    text-align: center;
 }
 
 .cell-3 {
@@ -84,9 +86,11 @@ aside {
 footer {
     display: block;
     grid-column: 2 / 4;
+    grid-row: 1 / 1;
     background-color: #fff;
     border-style: solid;
     border-color: #000;
+    text-align: left;
 }
 
 /* For screens <1000px, layout collapses into 1 column grid/list with footer at bottom */
@@ -96,5 +100,14 @@ footer {
     aside,
     footer {
     grid-column: 1 / 4;
+    }
+
+    header, 
+    footer {
+        text-align: center;
+    }
+
+    footer {
+        grid-row: 6 / 6;
     }
 }
