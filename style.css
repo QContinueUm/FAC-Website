@@ -20,6 +20,12 @@ h1 {
     font-family: 'Titan One', cursive; 
 }
 
+.responsive-image {
+    max-width: 10%;
+    height: auto;
+
+}
+
 /* Main container - holds the whole grid */
 /* On screens >1000px, grid appears with 2 columns and 3 rows
 On screens <1000px - grid appears as 1 column and 6 rows */
