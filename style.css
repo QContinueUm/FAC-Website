@@ -1,6 +1,10 @@
 /* Importing typography from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titan+One&display=swap');
 
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
 
 html {
     font-size: 2vw; 
