@@ -20,6 +20,7 @@ body {
     font-size: 1em;
 }
 
+/****************** TEXT STYLING ******************/
 /* Font for section titles */
 /* h1 will be used for "menu links" */
 h1 {
@@ -32,10 +33,22 @@ h1:hover {
     transform: scale(1.5);
 }
 
-/* h2 will be used for titles in body text */
+/* h2 will be used for titles on overlay sections */
 h2 {
     font-size: 1.5em; 
     font-family: 'Titan One', cursive; 
+}
+
+/* link styling */
+a {
+    color: #000;
+    text-decoration-color: #fff; 
+    text-decoration-thickness: .125em; 
+    text-underline-offset: 1.5px;
+}
+
+a:hover {
+    color: #fff;
 }
 
 /* Footer icons for Github, FCC, and Codewars */
@@ -43,6 +56,33 @@ h2 {
     max-width: 10%;
     height: auto;
 }
+
+/* Typing animated effect for header text upon page load */
+.typeout h3 {
+    display: inline-block; /* keeps text line within cell, inherits padding + text-align*/
+    width: auto; /* the text will type out this far - auto so it adjusts to length of text vs cell width */
+    color: #000; /* text color */
+    overflow: hidden; /* hides text until it "types out" */
+    border-right: .1em solid #0db1f0; /* blue cursor */
+    white-space: nowrap; /* text stays on one line vs two as it types out */
+    margin: auto; /* keeps typed line vertical-centered */
+    animation: 
+      type 3.5s steps(30, end), /* controls length of time for line to type out and "framerate" of animation */
+      cursor-blink .53s step-end infinite; /* how fast the cursor blinks, where it stops, and how long it keeps blinking */
+  }
+  
+  @keyframes type {
+    from { max-width: 0 } /* type effect starts */
+    to { max-width: 100% } /* type effect lasts through the end of typed line */
+  }
+  
+  @keyframes cursor-blink {
+    from, to { border-color: transparent } /* creates blinking effect - when cursor is "off" */
+    50% { border-color: #0db1f0} /* adds to blinking effect - when cursor is halway "on" */
+  }
+
+
+/******************GRID/CELL STYLING ******************/
 
 /* Main container - holds the whole grid */
 /* On screens >1000px, grid appears with 2 columns and 3 rows
@@ -71,31 +111,6 @@ header {
     border-color: #000;
     text-align: left;
 }
-
-/* Typing animated effect for header text upon page load */
-.typeout h3 {
-    display: inline-block; /* keeps text line within cell, inherits padding + text-align*/
-    width: auto; /* the text will type out this far - auto so it adjusts to length of text vs cell width */
-    color: #000; /* text color */
-    overflow: hidden; /* hides text until it "types out" */
-    border-right: .1em solid #0db1f0; /* blue cursor */
-    white-space: nowrap; /* text stays on one line vs two as it types out */
-    margin: auto; /* keeps typed line vertical-centered */
-    animation: 
-      type 3.5s steps(30, end), /* controls length of time for line to type out and "framerate" of animation */
-      cursor-blink .53s step-end infinite; /* how fast the cursor blinks, where it stops, and how long it keeps blinking */
-  }
-  
-  @keyframes type {
-    from { max-width: 0 } /* type effect starts */
-    to { max-width: 100% } /* type effect lasts through the end of typed line */
-  }
-  
-  @keyframes cursor-blink {
-    from, to { border-color: transparent } /* creates blinking effect - when cursor is "off" */
-    50% { border-color: #0db1f0} /* adds to blinking effect - when cursor is halway "on" */
-  }
-
 
 /* Teal and purple cells - appear in left column */
 section {
@@ -162,7 +177,7 @@ footer {
 }
 
 
-/****************** OVERLAYS STYLING ******************/
+/****************** OVERLAY STYLING ******************/
 
 /* X button to close overlays */
 #x {
@@ -256,13 +271,13 @@ footer {
     display: block;
 }
 
-/*  - this must stay beneath the overlay styling above for overlays to work as intended */
+/* This must stay beneath the overlay styling above for overlays to work as intended */
 .show {
     width: 100%;
     transition: width 0.5s ease-in;
 }
 
-/* OVERLAY TEXT CONTENT STYLING */
+/****************** OVERLAY TEXT CONTENT STYLING ******************/
 
 .overlaycontent {
     padding: 2rem;
@@ -270,13 +285,3 @@ footer {
     text-align: left;
 }
 
-a {
-    color: #000;
-    text-decoration-color: #fff; 
-    text-decoration-thickness: .125em; 
-    text-underline-offset: 1.5px;
-}
-
-a:hover {
-    color: #fff;
-}
