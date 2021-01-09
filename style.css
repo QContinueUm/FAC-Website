@@ -123,3 +123,24 @@ footer {
         grid-row: 6 / 6;
     }
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: violet;
+    transition: width 1s ease-out;
+    overflow-x:hidden;
+}
+
+.show {
+    width: 100%;
+    transition: width 1s ease-in;
+}
+
+.overlay .content {
+    width: 500ps;
+    display: block;
+}
