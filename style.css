@@ -126,6 +126,27 @@ footer {
 
 /****************** OVERLAYS STYLING ******************/
 
+/* X button to close overlays */
+#x {
+    position: absolute;
+    color: #000;
+    top: 25px;
+    right: 25px;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 1.25em; 
+    font-family: 'Titan One', cursive; 
+}
+
+#x:hover {
+    color: #fff;
+}
+
+#x:focus {
+    outline: none;
+}
+
 /* Onclick - opaque teal overlay for "who i am" content */
 .tealoverlay {
     position: fixed;
@@ -134,7 +155,7 @@ footer {
     width: 0;
     height: 100%;
     background-color: #0cb2c0;
-    transition: width 1s ease-out;
+    transition: width 0.5s ease-out;
     overflow-x: hidden;
 }
 
@@ -142,6 +163,8 @@ footer {
     width: 500ps;
     display: block;
 }
+
+
 
 /* Onclick - opaque yellow overlay for "why i'm applying" content */
 .yellowoverlay {
@@ -198,7 +221,7 @@ footer {
 
 .show {
     width: 100%;
-    transition: width 1s ease-in;
+    transition: width 0.5s ease-in;
 }
 
 
