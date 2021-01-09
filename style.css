@@ -21,6 +21,7 @@ body {
 }
 
 /* Font for section titles */
+/* h1 will be used for "menu links" */
 h1 {
     font-size: 1.5em; 
     font-family: 'Titan One', cursive; 
@@ -31,11 +32,11 @@ h1:hover {
     transform: scale(1.5);
 }
 
+/* h2 will be used for titles in body text */
 h2 {
     font-size: 1.5em; 
     font-family: 'Titan One', cursive; 
 }
-
 
 /* Footer icons for Github, FCC, and Codewars */
 .responsive-image {
