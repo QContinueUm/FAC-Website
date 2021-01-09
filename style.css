@@ -148,7 +148,7 @@ footer {
     outline: none;
 }
 
-/* Onclick - opaque teal overlay for "who i am" content */
+/* Onclick - opaque teal overlay for "who i am" container */
 .tealoverlay {
     position: fixed;
     top: 0;
@@ -160,12 +160,12 @@ footer {
     overflow-x: hidden;
 }
 
-.tealoverlay .content {
+.tealoverlay .container {
     width: 500ps;
     display: block;
 }
 
-/* Onclick - opaque yellow overlay for "why i'm applying" content */
+/* Onclick - opaque yellow overlay for "why i'm applying" container */
 .yellowoverlay {
     position: fixed;
     top: 0;
@@ -177,12 +177,12 @@ footer {
     overflow-x: hidden;
 }
 
-.yellowoverlay .content {
+.yellowoverlay .container {
     width: 500ps;
     display: block;
 }
 
-/* Onclick - opaque purple overlay for "here is my work" content */
+/* Onclick - opaque purple overlay for "here is my work" container */
 .purpleoverlay {
     position: fixed;
     top: 0;
@@ -194,12 +194,12 @@ footer {
     overflow-x: hidden;
 }
 
-.purpleoverlay .content {
+.purpleoverlay .container {
     width: 500ps;
     display: block;
 }
 
-/* Onclick - opaque pink overlay for "what i want to do" content */
+/* Onclick - opaque pink overlay for "what i want to do" container */
 .pinkoverlay {
     position: fixed;
     top: 0;
@@ -211,7 +211,7 @@ footer {
     overflow-x: hidden;
 }
 
-.pinkoverlay .content {
+.pinkoverlay .container {
     width: 500ps;
     display: block;
 }
@@ -222,6 +222,8 @@ footer {
     transition: width 0.5s ease-in;
 }
 
+/* OVERLAY TEXT CONTENT STYLING */
 
-
-
+.overlaycontent {
+    padding: 2rem;
+}
