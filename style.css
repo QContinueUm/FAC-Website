@@ -26,6 +26,17 @@ h1 {
     font-family: 'Titan One', cursive; 
 }
 
+h1:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.5);
+}
+
+h2 {
+    font-size: 1.5em; 
+    font-family: 'Titan One', cursive; 
+}
+
+
 /* Footer icons for Github, FCC, and Codewars */
 .responsive-image {
     max-width: 10%;
