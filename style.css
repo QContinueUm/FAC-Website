@@ -72,6 +72,31 @@ header {
     text-align: left;
 }
 
+/* Typing animated effect for header text upon page load */
+.typeout h3 {
+    display: inline-block; /* keeps text line within cell, inherits padding + text-align*/
+    width: auto; /* the text will type out this far - auto so it adjusts to length of text vs cell width */
+    color: #000; /* text color */
+    overflow: hidden; /* hides text until it "types out" */
+    border-right: .1em solid #0db1f0; /* blue cursor */
+    white-space: nowrap; /* text stays on one line vs two as it types out */
+    margin: auto; /* keeps typed line vertical-centered */
+    animation: 
+      type 3.5s steps(30, end), /* controls length of time for line to type out and "framerate" of animation */
+      cursor-blink .53s step-end infinite; /* how fast the cursor blinks, where it stops, and how long it keeps blinking */
+  }
+  
+  @keyframes type {
+    from { max-width: 0 } /* type effect starts */
+    to { max-width: 100% } /* type effect lasts through the end of typed line */
+  }
+  
+  @keyframes cursor-blink {
+    from, to { border-color: transparent } /* creates blinking effect - when cursor is "off" */
+    50% { border-color: #0db1f0} /* adds to blinking effect - when cursor is halway "on" */
+  }
+
+
 /* Teal and purple cells - appear in left column */
 section {
     display: block;
