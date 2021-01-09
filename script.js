@@ -1,5 +1,4 @@
 /* Overlay function for teal section */
-
 function showTealOverlay() {
     document.getElementById("tealoverlay").className += " show";
 }
@@ -9,7 +8,6 @@ function hideTealOverlay() {
 }
 
 /* Overlay function for yellow section */
-
 function showYellowOverlay() {
     document.getElementById("yellowoverlay").className += " show";
 }
@@ -19,7 +17,6 @@ function hideYellowOverlay() {
 }
 
 /* Overlay function for purple section */
-
 function showPurpleOverlay() {
     document.getElementById("purpleoverlay").className += " show";
 }
@@ -29,7 +26,6 @@ function hidePurpleOverlay() {
 }
 
 /* Overlay function for pink section */
-
 function showPinkOverlay() {
     document.getElementById("pinkoverlay").className += " show";
 }
