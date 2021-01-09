@@ -124,26 +124,83 @@ footer {
     }
 }
 
-.overlay {
+/****************** OVERLAYS STYLING ******************/
+
+/* Onclick - opaque teal overlay for "who i am" content */
+.tealoverlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
+    background-color: #0cb2c0;
     transition: width 1s ease-out;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
+
+.tealoverlay .content {
+    width: 500ps;
+    display: block;
+}
+
+/* Onclick - opaque yellow overlay for "why i'm applying" content */
+.yellowoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fad141;
+    transition: width 1s ease-out;
+    overflow-x: hidden;
+}
+
+.yellowoverlay .content {
+    width: 500ps;
+    display: block;
+}
+
+/* Onclick - opaque purple overlay for "here is my work" content */
+.purpleoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #5e72d4;
+    transition: width 1s ease-out;
+    overflow-x: hidden;
+}
+
+.purpleoverlay .content {
+    width: 500ps;
+    display: block;
+}
+
+/* Onclick - opaque pink overlay for "what i want to do" content */
+.pinkoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f725a0;
+    transition: width 1s ease-out;
+    overflow-x: hidden;
+}
+
+.pinkoverlay .content {
+    width: 500ps;
+    display: block;
+}
+
+/*  - this must stay beneath the overlay styling above for overlays to work */
 
 .show {
     width: 100%;
     transition: width 1s ease-in;
 }
 
-.overlay .content {
-    width: 500ps;
-    display: block;
-}
 
-.teal {
-    background-color: #0cb2c0;
-}
+
+

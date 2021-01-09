@@ -23,10 +23,10 @@
       <section>
         <div class="grid-cell cell-2">
           <div class=".grid-cell">
-            <a onclick="showOverlay()"><h1>who i am</h1></a>
-            <div id="overlay" class="overlay content teal">
+            <a onclick="showTealOverlay()"><h1>who i am</h1></a>
+            <div id="tealoverlay" class="tealoverlay content">
               <p>here is some text</p>
-              <a onclick="hideOverlay()">hide me</a>
+              <a onclick="hideTealOverlay()">hide me</a>
             </div>
           </div>
         </div>
@@ -35,21 +35,39 @@
       <!-- yellow cell --> 
       <aside>
         <div class="grid-cell cell-3">
-          <div class=".grid-cell"><h1>why i'm applying</h1></div>
+          <div class=".grid-cell">
+            <a onclick="showYellowOverlay()"><h1>why i'm applying</h1></a>
+            <div id="yellowoverlay" class="yellowoverlay content">
+              <p>different text for the yellow aside area</p>
+              <a onclick="hideYellowOverlay()">hide this</a>
+            </div>
+          </div>
         </div>   
       </aside>
 
       <!-- purple cell --> 
       <section>
         <div class="grid-cell cell-4">
-          <div class=".grid-cell"><h1>here is my work</h1></div>
+          <div class=".grid-cell">
+            <a onclick="showPurpleOverlay()"><h1>here is my work</h1></a>
+            <div id="purpleoverlay" class="purpleoverlay content">
+              <p>different text for the purple section area</p>
+              <a onclick="hidePurpleOverlay()">hide it</a>
+            </div>
+          </div>
         </div>
       </section>
 
        <!-- pink cell --> 
        <aside>
         <div class="grid-cell cell-5">
-          <div class=".grid-cell"><h1>what i want to do</h1></div>
+          <div class=".grid-cell">
+            <a onclick="showPinkOverlay()"><h1>what i want to do</h1></a>
+            <div id="pinkoverlay" class="pinkoverlay content">
+              <p>different text for the pink aside area</p>
+              <a onclick="hidePinkOverlay()">hide everything</a>
+            </div>
+          </div>
         </div>
       </aside>
 
