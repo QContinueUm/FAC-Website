@@ -269,3 +269,14 @@ footer {
     display: block;
     text-align: left;
 }
+
+a {
+    color: #000;
+    text-decoration-color: #fff; 
+    text-decoration-thickness: .125em; 
+    text-underline-offset: 1.5px;
+}
+
+a:hover {
+    color: #fff;
+}
