@@ -1,6 +1,7 @@
 /* Importing typography from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titan+One&display=swap');
 
+/* Viewport meta tag - improves layout on mobile devices */ 
 @-ms-viewport{
     width: extend-to-zoom;
     zoom: 1.0;
@@ -19,15 +20,16 @@ body {
     font-size: 1em;
 }
 
+/* Font for section titles */
 h1 {
     font-size: 1.5em; 
     font-family: 'Titan One', cursive; 
 }
 
+/* Footer icons for Github, FCC, and Codewars */
 .responsive-image {
     max-width: 10%;
     height: auto;
-
 }
 
 /* Main container - holds the whole grid */
@@ -45,7 +47,6 @@ On screens <1000px - grid appears as 1 column and 6 rows */
 /* Applies to overall styling of all cells in the grid */
 .grid-cell {
     padding: 2em;    
-
 } 
 
 /* Header - top left white cell */
@@ -89,7 +90,6 @@ aside {
     background-color: #fad141;
 }
 
-
 .cell-5 {
     background-color: #f725a0;
 }
@@ -123,6 +123,7 @@ footer {
         grid-row: 6 / 6;
     }
 }
+
 
 /****************** OVERLAYS STYLING ******************/
 
@@ -163,8 +164,6 @@ footer {
     width: 500ps;
     display: block;
 }
-
-
 
 /* Onclick - opaque yellow overlay for "why i'm applying" content */
 .yellowoverlay {
@@ -217,8 +216,7 @@ footer {
     display: block;
 }
 
-/*  - this must stay beneath the overlay styling above for overlays to work */
-
+/*  - this must stay beneath the overlay styling above for overlays to work as intended */
 .show {
     width: 100%;
     transition: width 0.5s ease-in;
