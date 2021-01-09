@@ -7,6 +7,8 @@
     zoom: 1.0;
 }
 
+* {box-sizing:border-box}
+
 html {
     font-size: 2vw; 
 }
@@ -226,4 +228,6 @@ footer {
 
 .overlaycontent {
     padding: 2rem;
+    display: block;
+    text-align: left;
 }
