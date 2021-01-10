@@ -18,6 +18,7 @@ body {
     margin: 50px 85px 85px 50px;   
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #000;
 }
 
 /****************** TEXT STYLING ******************/
@@ -287,21 +288,4 @@ footer {
 }
 
 
-/****************** SLIDESHOW ******************/
 
-/* .slideshow-images {
-
-}
-
-.slideshow-container {
-    width: 50vw;
-    height: auto;
-}
-
-.visible {
-    display: block;
-}
-
-.hidden {
-    display: none;
-} */
