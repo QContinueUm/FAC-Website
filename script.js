@@ -1,3 +1,4 @@
+/*********** OVERLAY CONTENT ***********/
 /* Overlay function for teal section */
 function showTealOverlay() {
     document.getElementById("tealoverlay").className += " show";
@@ -33,3 +34,20 @@ function showPinkOverlay() {
 function hidePinkOverlay() {
     document.getElementById("pinkoverlay").classList.remove("show");
 }
+
+/*********** IMAGE CAROUSEL ***********/
+// const slideshowImages = document.getElementsByClassName("slideshow-images");
+// let currentImage = 0;
+
+// function nextImage() {
+//     currentImage++;
+//     checkLimit();
+// }
+
+// const checkLimit = () => {
+//     if (currentImage > slideshowImages.length - 1) {
+//         currentImage = 0;
+//     }
+// }
+// setInterval(nextImage, 3000);
+

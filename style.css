@@ -287,8 +287,21 @@ footer {
 }
 
 
-/****************** IMAGE CAROUSEL ******************/
+/****************** SLIDESHOW ******************/
 
-.carousel-images {
-    padding: 10px;
+/* .slideshow-images {
+
 }
+
+.slideshow-container {
+    width: 50vw;
+    height: auto;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+} */
