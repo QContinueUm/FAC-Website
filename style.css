@@ -148,7 +148,8 @@ aside {
 
 /* Footer - top right white cell on screens > 1000px */
 footer {
-    display: block;
+    display: flex;
+    align-items: center;
     grid-column: 2 / 4;
     grid-row: 1 / 1;
     background-color: #fff;
