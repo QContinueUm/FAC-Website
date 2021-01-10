@@ -322,3 +322,13 @@ footer {
     content: ' ';
     transition: all ease-in-out 0.2s;
 }
+
+.toggle input[type='checkbox']:checked ~ label {
+    background-color: #688ff4;
+    border-color: #000;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+    background-color: #000;
+    transform: translateX(40px);
+}
