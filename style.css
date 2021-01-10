@@ -309,4 +309,20 @@ footer {
     border-radius: 30px;
 }
     
+.toggle label::after {
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #000;
+    left: 2px;
+    top: 2px;
+    content: ' ';
 
+
+    
+
+    
+
+}
