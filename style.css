@@ -67,6 +67,10 @@ a:hover {
     height: auto;
 }
 
+#noborder {
+    border: none;
+}
+
 /* Typing animated effect for header text upon page load */
 .typeout h3 {
     display: inline-block; /* keeps text line within cell, inherits padding + text-align*/
