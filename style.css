@@ -18,6 +18,7 @@ body {
     margin: 50px 85px 85px 50px;   
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #000;
 }
 
 /****************** TEXT STYLING ******************/
@@ -295,6 +296,12 @@ footer {
 
 
 /****************** THEME TOGGLE ******************/
+
+.toggle-container {
+    display: grid;
+    padding: 1rem;
+}
+
 .toggle input[type='checkbox'] { 
     display: none; /* use checkbox but hide its default styling */
 }
@@ -331,4 +338,12 @@ footer {
 .toggle input[type='checkbox']:checked ~ label::after {
     background-color: #000;
     transform: translateX(40px);
+}
+
+/* 87 theme */
+body.dark-theme {
+    background-image: none;
+    background-color: #000; 
+    color: #fff;
+
 }
