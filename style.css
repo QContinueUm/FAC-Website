@@ -288,7 +288,25 @@ footer {
 
 
 /****************** IMAGE CAROUSEL ******************/
-
+/* 
 .carousel-images {
     padding: 10px;
+} */
+
+
+/****************** THEME TOGGLE ******************/
+.toggle input[type='checkbox'] { 
+    display: none; /* use checkbox but hide its default styling */
 }
+
+.toggle label {
+    display: block;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    border: 2px solid #000;
+    background-color: #0db1f0;
+    border-radius: 30px;
+}
+    
+
