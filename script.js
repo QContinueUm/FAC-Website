@@ -36,18 +36,18 @@ function hidePinkOverlay() {
 }
 
 /*********** IMAGE CAROUSEL ***********/
-const slideshowImages = document.getElementsByClassName("slideshow-images");
-let currentImage = 0;
+// const slideshowImages = document.getElementsByClassName("slideshow-images");
+// let currentImage = 0;
 
-function nextImage() {
-    currentImage++;
-    checkLimit();
-}
+// function nextImage() {
+//     currentImage++;
+//     checkLimit();
+// }
 
-const checkLimit = () => {
-    if (currentImage > slideshowImages.length - 1) {
-        currentImage = 0;
-    }
-}
-setInterval(nextImage, 3000);
+// const checkLimit = () => {
+//     if (currentImage > slideshowImages.length - 1) {
+//         currentImage = 0;
+//     }
+// }
+// setInterval(nextImage, 3000);
 
